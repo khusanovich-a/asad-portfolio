@@ -1,0 +1,32 @@
+.projects {
+  height: 1300px;
+  background: linear-gradient(0deg, #1c2a34 100%, #111a20 100%);
+  padding: 30px;
+}
+
+.cards {
+  background-color: #242b36;
+  border-left: 5px solid #42b883;
+  box-shadow: rgb(55, 53, 53);
+  color: #eff9ff;
+  width: 821px;
+  height: 267px;
+  display: flex;
+  padding: 2rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.exp {
+  width: 154px;
+  height: 42px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: #242b36;
+  color: gray;
+}
+
+.exp:hover {
+  background-color: #424c54;
+}

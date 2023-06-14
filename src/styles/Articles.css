@@ -1,0 +1,55 @@
+.articles {
+    height: 550px;
+    background: linear-gradient(0deg, #1c2a34 100%, #111a20 100%);
+    padding-left: 270px;
+    padding-top: 30px;
+    color: white;
+}
+
+.article-content {
+    margin: 100px 0px 0px 0px;
+}
+
+
+.first-h > a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.first-p a {
+    text-decoration: none;
+    color: #5E8CA7 ;
+}
+
+.second-h > a{
+    text-decoration: none ;
+    color: white ;
+}
+
+.second-p a {
+    text-decoration: none;
+    color: #5E8CA7;
+}
+
+.third-h > a{
+    text-decoration: none;
+    color: white ;
+}
+
+.third-p a {
+    text-decoration: none;
+    color: #5E8CA7 ;
+}
+
+.first-h > a:hover {
+    color: #56f781;
+}
+
+.second-h > a:hover {
+    color: #56f781;
+}
+
+.third-h > a:hover {
+    color: #56f781;
+}
