@@ -1,55 +1,43 @@
 .articles {
-    height: 550px;
-    background: linear-gradient(0deg, #1c2a34 100%, #111a20 100%);
-    padding-left: 270px;
-    padding-top: 30px;
-    color: white;
+  min-height: 100vh;
+  background: linear-gradient(0deg, #1c2a34 100%, #111a20 100%);
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: justify; /* Выравнивание по обзацу */
+  padding-left: 350px;
 }
 
 .article-content {
-    margin: 100px 0px 0px 0px;
+  margin-top: 2rem;
 }
 
-
-.first-h > a{
-    text-decoration: none;
-    color: white;
-
+.articles a {
+  text-decoration: none;
+  color: #5E8CA7;
 }
 
-.first-p a {
-    text-decoration: none;
-    color: #5E8CA7 ;
+.articles a:hover {
+  color: #56f781;
 }
 
-.second-h > a{
-    text-decoration: none ;
-    color: white ;
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .articles {
+    padding: 1rem;
+  }
+  
+  .article-content {
+    margin-top: 1rem;
+  }
 }
 
-.second-p a {
-    text-decoration: none;
-    color: #5E8CA7;
-}
-
-.third-h > a{
-    text-decoration: none;
-    color: white ;
-}
-
-.third-p a {
-    text-decoration: none;
-    color: #5E8CA7 ;
-}
-
-.first-h > a:hover {
-    color: #56f781;
-}
-
-.second-h > a:hover {
-    color: #56f781;
-}
-
-.third-h > a:hover {
-    color: #56f781;
+/* Адаптивность для планшетов */
+@media (max-width: 992px) {
+  .articles {
+    padding: 1.5rem;
+  }
 }

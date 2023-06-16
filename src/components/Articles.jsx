@@ -3,7 +3,7 @@ import "/src/styles/Articles.css";
 
 const Articles = () => {
   return (
-    <div className="articles" >
+    <div className="articles" > 
       <h1>Latest Articles</h1>
       <div className="article-content" data-aos="zoom-in">
         <h4 className="first-h">

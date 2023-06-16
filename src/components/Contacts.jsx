@@ -1,5 +1,5 @@
 import React from "react";
-import  { useState } from 'react'
+import { useState } from 'react'
 import "/src/styles/Contacts.css";
 import axios from "axios";
 
@@ -7,8 +7,14 @@ const Contacts = () => {
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [text, setText] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const sendMessage = async () => {
+    if (!name || !mail || !text) {
+      setErrorMessage("Please fill in all fields");
+      return;
+    }
+
     try {
       const message = `Name: ${name}\nMail: ${mail}\nText: ${text}`;
 
@@ -26,6 +32,7 @@ const Contacts = () => {
       setName("");
       setMail("");
       setText("");
+      setErrorMessage("");
     } catch (error) {
       console.error(error);
     }
@@ -63,13 +70,15 @@ const Contacts = () => {
           onChange={(e) => setMail(e.target.value)}
         />
         <label className="text-white">Message</label>
-        <textarea className="text"
+        <textarea
+          className="text"
           value={text}
           onChange={(e) => setText(e.target.value)}
         ></textarea>
         <button className="send" type="submit" onClick={sendMessage}>
           Send Message
         </button>
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
       </div>
     </div>
   );

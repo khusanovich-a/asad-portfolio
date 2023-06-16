@@ -1,31 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .main {
-    background: linear-gradient(0deg, #1c2a34 100%, #111a20 100%);
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-family: 'Poppins', sans-serif;
-    padding: 85px 0px 0px 0px;
+  background: linear-gradient(0deg, #1c2a34 100%, #111a20 100%);
+  min-height: 100vh; /* Замените высоту на min-height, чтобы контейнер занимал всю высоту экрана */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Добавьте выравнивание элементов по центру */
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  padding: 85px 0; /* Удалите лишний ноль в конце */
 }
 
 .main-text {
-    width: 837px;
-    font-size: 64px;
-    color: #82F9A1;
-    margin: 0 auto;
-    padding: 32px 0px;
+  max-width: 100%; /* Замените фиксированную ширину на максимальную ширину */
+  font-size: 4vw; /* Используйте относительные единицы (vw) для размера шрифта */
+  color: #82F9A1;
+  margin: 0 auto;
+  padding: 32px 0;
+  text-align: center; /* Выравнивание текста по центру */
 }
 
 .second-text {
-    width: 837px;
-    height: 64px;
-    font-size: 22px;
-    color: #EFF9FF;
-    margin: 0 auto;
+  max-width: 100%; /* Замените фиксированную ширину на максимальную ширину */
+  font-size: 1.5vw; /* Используйте относительные единицы (vw) для размера шрифта */
+  color: #EFF9FF;
+  margin: 0 auto;
+  text-align: center; /* Выравнивание текста по центру */
 }
 
 .second-text > a {
-    text-decoration: none;
+  text-decoration: none;
+  color: #EFF9FF; /* Измените цвет ссылки на белый, чтобы он соответствовал остальному тексту */
 }

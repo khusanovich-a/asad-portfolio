@@ -1,20 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .titles {
-  height: 1350px;
+  min-height: 100vh; /* Замените фиксированную высоту на минимальную высоту, чтобы контейнер занимал всю высоту экрана */
   background: linear-gradient(0deg, #1c2a34 100%, #111a20 100%);
   font-family: "Poppins", sans-serif;
   color: white;
+  display: flex;
   flex-direction: column;
-  padding: 1rem 4rem;
+  padding: 2rem; /* Измените отступы, чтобы быть более сбалансированными на разных устройствах */
+  justify-content: center; /* Выравнивание элементов по центру по вертикали */
+  align-items: center; /* Выравнивание элементов по центру по горизонтали */
   text-align: center;
 }
 
-  .title-text {
-  padding: 64px 0px 30px 0px;
-  font-size: 64px;
+.title-text {
+  font-size: 6vw; /* Используйте относительные единицы (vw) для размера шрифта */
+  margin-bottom: 1rem; /* Добавьте небольшой отступ снизу, чтобы разделить текст */
 }
 
 .title-Subtext {
-  font-size: 28px;
+  font-size: 3vw; /* Используйте относительные единицы (vw) для размера шрифта */
 }

@@ -1,99 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .cnt-main {
-    font-family: 'Poppins', sans-serif;
-    background-color: #242b36;
-    height: 1100px;
-    padding: 120px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #242b36;
+  min-height: 100vh; /* Замените фиксированную высоту на минимальную высоту, чтобы контейнер занимал всю высоту экрана */
+  padding: 5%; /* Измените отступы, чтобы быть более сбалансированными на разных устройствах */
 }
 
 .contact {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Добавьте выравнивание по центру по вертикали */
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .cnt {
-    text-align: center;
-    color: #a3ecaf;
-    font-size: 38px;
+  text-align: center;
+  color: #a3ecaf;
+  font-size: 5vw; /* Используйте относительные единицы (vw) для размера шрифта */
 }
 
 .cnt-p {
-    color: white;
-    font-size: 24px;
-    text-align: center;
+  color: white;
+  font-size: 2vw; /* Используйте относительные единицы (vw) для размера шрифта */
+  text-align: center;
 }
 
 .status {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Добавьте выравнивание по центру по вертикали */
+  flex-direction: column;
 }
 
 .sts {
-    color: #a3ecaf;
-    font-size: 22px;
-    text-align: center;
+  color: #a3ecaf;
+  font-size: 1.8vw; /* Используйте относительные единицы (vw) для размера шрифта */
+  text-align: center;
 }
 
 .avb {
-    font-size: 28px;
-    color: #55a2cf;
-    text-align: center;
+  font-size: 2.5vw; /* Используйте относительные единицы (vw) для размера шрифта */
+  color: #55a2cf;
+  text-align: center;
 }
 
 .form {
-    width: 476px;
-    height: 482px;
-    text-align: center;
-    padding: 15px;
-    border: 1px solid white;
-    margin: 0 auto;
-    border-radius: 0.25rem;
-    margin-top: 50px;
-    font-family: 'Poppins', sans-serif;
+  max-width: 476px; /* Замените ширину на максимальную ширину, чтобы форма была отзывчивой */
+  width: 90%; /* Добавьте отзывчивую ширину */
+  text-align: center;
+  padding: 2%; /* Измените отступы, чтобы быть более сбалансированными на разных устройствах */
+  border: 1px solid white;
+  margin: 2% auto; /* Измените отступы, чтобы быть более сбалансированными на разных устройствах */
+  border-radius: 0.25rem;
 }
 
-.name {
-    width: 436px;
-    height: 48px;
-    padding: 6px 12px;
-    border-radius: 0.25rem;
-    margin-bottom: 6px;
-    border: 1px solid white;
-    background: rgba(0, 0, 0, 0);
-    color: white;
-}
-
-.mail {
-    width: 436px;
-    height: 48px;
-    padding: 6px 12px;
-    margin-bottom: 6px;
-    border-radius: 0.25rem;
-    border: 1px solid white;
-    background: rgba(0, 0, 0, 0);
-    color: white;
+.name,
+.mail,
+.text {
+  width: 100%; /* Измените ширину на 100% для заполнения доступной ширины контейнера */
+  height: 48px;
+  padding: 6px 12px;
+  border-radius: 0.25rem;
+  margin-bottom: 6px;
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0);
+  color: white;
 }
 
 .text {
-    width: 436px;
-    height: 158px;
-    padding: 6px 12px;
-    border: 1px solid white;
-    border-radius: 0.25rem;
-    background: rgba(0, 0, 0, 0);
-    color: white;
+  height: 158px;
 }
 
 .send {
-    width: 215px;
-    height: 48px;
-    background-color: #83f9a2;
-    margin-top: 50px;
-    border-radius: 0.3rem;
-    font-size: 20px;
-
+  width: 100%; /* Измените ширину на 100% для заполнения доступной ширины контейнера */
+  height: 48px;
+  background-color: #83f9a2;
+  margin-top: 2%; /* Измените отступы, чтобы быть более сбалансированными на разных устройствах */
+  border-radius: 0.3rem;
+  font-size: 2vw; /* Используйте относительные единицы (vw) для размера шрифта */
 }

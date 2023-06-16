@@ -25,6 +25,7 @@ li {
 
 .nav-links {
   color: white;
+  text-decoration: none;
 }
 
 .nav-links:hover {
@@ -43,4 +44,43 @@ li {
   transform: scale(1.2);
   transition: 0.7s;
   color: white;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 576px) {
+  .nav {
+    padding: 10px;
+  }
+
+  .items {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+
+  .brands {
+    margin-left: 40px;
+    font-size: 20px;
+  }
+}
+
+/* Адаптивность для планшетов */
+@media (max-width: 768px) {
+  .items {
+    margin-right: 40px;
+  }
+
+  .brands {
+    margin-left: 60px;
+  }
+}
+
+/* Адаптивность для небольших ноутбуков и планшетов */
+@media (max-width: 992px) {
+  .items {
+    margin-right: 60px;
+  }
+
+  .brands {
+    margin-left: 80px;
+  }
 }
